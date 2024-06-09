@@ -1,5 +1,6 @@
 #import <stdio.h>
 
-int main(){
-	printf("hello");
+int main() {
+	printf("hello\n");
+	printf("Answer %d\n", 17);
 };
