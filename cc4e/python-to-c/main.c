@@ -5,7 +5,8 @@
 // print('Name', 'Sarah')
 
 int main(){
-	printf("hello");
-	printf("Answer", 17);
-	printf("hello" + "4");
+	char name[] = "Sarah";
+	printf("Hello world\n");
+	printf("Answer %d\n", 17);
+	printf("Name %s\n", name);
 };
