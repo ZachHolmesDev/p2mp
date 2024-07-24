@@ -25,11 +25,11 @@ print('Minimum', minval)
 int main() {
 	int min;
 	int max;
+    char input[1001];
 
 
-	while (true) {
-	char line[1001];
-	// scanf("%1000s", &line)
-	fgets(line, 1000, stdin)	
+	while (1) {
+
+
 	}
 };
