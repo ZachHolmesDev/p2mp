@@ -29,7 +29,33 @@ int main() {
 
 
 	while (1) {
+        char line[1001];
+        
+        // take input for int 
+        gets();
+        // strip whitespace ?
 
+        // check if done 
+        if (line == "done"){
+            break;
+        }
+        // convert to int
+        atio();
+        // check for maxval 
+
+        // check for minval
 
 	}
 };
+
+/*
+This will be provided as input to your program: Copy 
+5
+2
+9
+done
+
+Expected output from your program:
+Maximum 9
+Minimum 2
+*/
