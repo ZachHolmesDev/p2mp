@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+// print('Enter line')
+// line = input()
+// print('Line:', line)
+
 int main() {
   char input[1001];
 
