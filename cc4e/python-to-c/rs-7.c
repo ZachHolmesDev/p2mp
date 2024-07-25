@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /*
 Exercise RS-7: Write a C program to determine the minimum and maximum of a sequence of integer numbers on input, 
@@ -28,24 +29,25 @@ int main() {
     char input[1001];
 
 
-	while (1) {
         char line[1001];
+	while (1) {
         
         // take input for int 
-        gets();
+        gets(line);
         // strip whitespace ?
 
         // check if done 
-        if (line == "done"){
+        if ( strcmp(line, "done") == 0 ) {
             break;
         }
         // convert to int
-        atio();
+        // atio();
         // check for maxval 
 
         // check for minval
 
 	}
+    return 0;
 };
 
 /*
