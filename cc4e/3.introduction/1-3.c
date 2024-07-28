@@ -1,9 +1,18 @@
 #include <stdio.h>
-int main() /* Fahrenheit-Celsius table */
-{
+
+int main() {
     int fahr;
+
+    printf("FAHR   CELSIUS\n");
+    printf("---------------\n");
+    /*
+    The format specifier %4d is used to print the Fahrenheit temperature as a 4-digit integer, 
+    and %6.1f is used to print the Celsius temperature as a floating-point number with one decimal place.
+    */
     for (fahr = 0; fahr <= 300; fahr = fahr + 40)
-        printf("%4d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+        printf("%4d %6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32));
+
+    return 0;
 }
 
 /*
