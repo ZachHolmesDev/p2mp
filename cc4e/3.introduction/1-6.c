@@ -10,15 +10,18 @@ Expected output from your program:
 
 29 4
 */
-
 #include <stdio.h>
 
 int main() /* count new lines in input */
 {
-    int c, nl;
+    int c, nl, spc;
     nl = 0;
-    while ((c = getchar()) != EOF)
+    spc = 0;
+    while ((c = getchar()) != EOF) {
         if (c == '\n')
             ++nl;
-    printf("%d\n", nl);
+        if (c == ' ')
+            ++spc;
+    }
+    printf("%d %d\n", spc, nl);
 }
