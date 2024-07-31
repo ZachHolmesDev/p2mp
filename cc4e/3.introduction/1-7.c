@@ -5,8 +5,16 @@ replacing each string of one or more blanks by a single blank.
 #include <stdio.h>
 
 int main() {
-    int c;
+    int c, lastChar;
+    // lastChar = ?
     while ((c = getchar()) != EOF) {
+        
+        if ((c == ' ') && (lastChar == ' ')) {
+            lastChar = c;
+            continue;
+        }
+
+        lastChar = c;
         putchar(c);
     } 
 }
