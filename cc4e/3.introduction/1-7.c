@@ -6,9 +6,11 @@ replacing each string of one or more blanks by a single blank.
 
 int main() {
     int c, lastChar;
-    // lastChar = ?
+    lastChar = 0;
     while ((c = getchar()) != EOF) {
         
+        // if current char and the last char are both a blank 
+        // skip the char 
         if ((c == ' ') && (lastChar == ' ')) {
             lastChar = c;
             continue;
